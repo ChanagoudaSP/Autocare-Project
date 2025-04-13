@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repairs Booking - AutoCare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #007bff;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Repairs Booking</h1>
+        <form action="/book-repairs" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="vehicle" placeholder="Vehicle Name" required>
+            <input type="date" name="date" required>
+            <select name="repairType">
+                <option value="Engine Repair">Engine Repair</option>
+                <option value="Brake Service">Brake Service</option>
+                <option value="Transmission Repair">Transmission Repair</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
